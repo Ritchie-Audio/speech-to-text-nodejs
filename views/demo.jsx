@@ -17,7 +17,6 @@ import samples from '../src/data/samples.json';
 import cachedModels from '../src/data/models.json';
 
 const ERR_MIC_NARROWBAND = 'Microphone transcription cannot accommodate narrowband voice models, please select a broadband one.';
-const NEW_DEMO_NOTIFICATION = 'A new Speech to Text demo is available, check it out ';
 
 export class Demo extends Component {
   constructor(props) {
@@ -461,16 +460,7 @@ export class Demo extends Component {
           </div>
         </div>
 
-        <div className="new_demo_notification">
-          <Alert type="info" color="blue">
-            {NEW_DEMO_NOTIFICATION}
-            <a href="https://www.ibm.com/demos/live/speech-to-text/self-service/home" target="blank">
-              here.
-            </a>
-          </Alert>
-        </div>
-
-        <h2 className="base--h2">Transcribe Audio</h2>
+        <h2 className="base--h2">Ritchie's Demo - Lets Transcribe Audio</h2>
 
         <ul className="base--ul">
           {micBullet}
